@@ -1,0 +1,190 @@
+.my-skills {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.my-skills__center {
+}
+
+.my-skills__card-row {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    position: relative;
+
+    @media (max-width: 1245px) {
+        flex-wrap: wrap;
+        row-gap: 16px;
+    }
+}
+.skill-card {
+    min-width: 200px;
+    min-height: 300px;
+    border-radius: 10px;
+    position: relative;
+    transition: min-width 0.5s min-height 0.5s;
+
+
+
+    
+    @media (max-width: 661px) {
+        width: 285px;
+        min-height: 60px;
+    }
+    &__icon svg{
+        @media (max-width: 661px) {
+            width: 28px;
+            height: 32px;
+        }
+    }
+
+    &__front{
+        padding-top: 61px;
+        padding-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        background-color: $cardColor;
+        transform: perspective(600px) rotateY(0deg);
+
+        @media (max-width: 661px) {
+            flex-direction: row;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 32px;
+            column-gap: 30px;
+            }
+        }
+    
+        &__back{
+            background-color: #FFDF00;
+            transform: perspective(600px) rotateY(-180deg);
+            height: 100%;
+        }
+        
+        &__front,
+        &__back{
+        width: 100%;
+        
+        overflow: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        transition: transform 1s;
+        border-radius: 10px;
+        }
+
+
+    &:hover{
+
+        
+
+       
+
+        .skill-card__item--html{
+            fill: #FC490B;
+
+            @media (max-width: 661px) {
+            width: 28px;
+            height: 32px;
+            }
+        }
+        .skill-card__item--css{
+            fill: #2196F4;
+
+            @media (max-width: 661px) {
+                width: 28px;
+                height: 32px;
+                }
+        }
+        .skill-card__item--js{
+            fill: #FFDF00;
+
+            @media (max-width: 661px) {
+                width: 32px;
+                height: 32px;
+                }
+        }
+        .skill-card__item--scss{
+            fill: #CA669B;
+
+            @media (max-width: 661px) {
+                width: 32px;
+                height: 32px;
+                }
+        }
+        .skill-card__item--git{
+            fill: #F25234;
+
+            @media (max-width: 661px) {
+                width: 32px;
+                height: 32px;
+                }
+        }
+        .context-btn{
+            // border-color: #2eaf84;
+            // transition: border-color 500ms;
+            transition: box-shadow 500ms;
+        }
+        .skill-card__item{
+            transition: fill 500ms;
+        }
+        .context-btn--html{
+            box-shadow: 0px 0px 4px 1px #FC490B, inset 0px 0px 1px 1px #FC490B;
+        }
+        .context-btn--css{
+            box-shadow: 0px 0px 4px 1px #2196F4, inset 0px 0px 1px 1px #2196F4;
+        }
+        .context-btn--js{
+            box-shadow: 0px 0px 4px 1px #FFDF00, inset 0px 0px 1px 1px #FFDF00;
+        }
+        .context-btn--scss{
+            box-shadow: 0px 0px 4px 1px #CA669B, inset 0px 0px 1px 1px #CA669B;
+        }
+        .context-btn--git{
+            box-shadow: 0px 0px 4px 1px #F25234, inset 0px 0px 1px 1px #F25234;
+        }
+    }
+
+}
+.skill-card__item{
+    transition: fill 500ms;
+
+}
+.skill-card.active{
+
+    z-index: 6;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
+
+    min-width: 400px;
+    min-height: 600px;
+
+    .skill-card__front{
+        transform: perspective(600px) rotateY(180deg);
+    }
+
+    .skill-card__back{
+        transform: perspective(600px) rotateY(0deg);
+        
+    }
+
+    @media (max-width: 661px) {
+        min-width: 200px;
+        min-height: 300px;
+        }
+}
+.skill-card__krestik{
+    position: absolute;
+    right: 0;
+    padding-top: 5px;
+    padding-right: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.skill-card__krestik:hover{
+    background-color: #2eaf84;
+}
+

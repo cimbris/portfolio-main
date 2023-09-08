@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@700&display=swap');
+@import url(/fonts/ofont.ru_Impact.ttf);
+// font-family: 'Inconsolata', monospace;
+// font-family: 'Roboto Mono', monospace;
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+button{
+background-color: transparent;
+border: none;
+display: inline-block;
+}
+
+html {
+height: 100%; /* sticky footer */
+scroll-behavior: smooth;
+
+}
+
+body {
+height: 100%; /* sticky footer */
+display: flex; /* sticky footer */
+flex-direction: column; /* sticky footer */
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+background-color: $backgroundBody;
+}
+
+body > * {
+flex-shrink: 0; /* sticky footer */
+}
+
+body.active {
+    overflow: hidden;
+}
+
+input, textarea, button {
+font-family: inherit;
+padding: 0;
+}
+
+label {
+cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+}
+
+img, svg {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+fieldset {
+border: none;
+margin: 0;
+padding: 0;
+}
+
+legend {
+display: block;
+margin: 0;
+padding: 0;
+border: none;
+}
+
+/* Grid styles */
+
+.container {
+max-width: 1245px;
+width: 100%;
+margin-right: auto;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px;
+
+    @media (max-width: 1245px) {
+    width: 662px;
+    }
+
+    @media (max-width: 661px) {
+        width: 413px;
+    }
+
+}
+/* Utility */
+
+.background-blur{
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+.background-blur.active{
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(41, 40, 41, 0.61);
+    backdrop-filter: blur(5px);
+}
+
+.hidden {
+display: none !important;
+}
+
+/* Sticky Footer */
+
+.footer {
+margin-top: auto; /* sticky footer */
+}
+
+// off yellow background input
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+-webkit-text-fill-color: $textColor;
+-webkit-box-shadow: 0 0 0px 1000px #1f1e1b inset;
+transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// /* Tablet */
+// @media (max-width: 1199px) {
+//     width: 900px;
+//     }
+    
+//     /* Mobile */
+//     @media (max-width: 899px) {
+//     width: 768px;
+//     }
+    
+//     /* Mobile XS */
+//     @media (max-width: 767px) {
+//     width: 320px;
+//     }

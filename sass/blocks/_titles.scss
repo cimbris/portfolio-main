@@ -1,0 +1,47 @@
+.title-head{
+    font-family: 'Inconsolata';
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.05;
+    color: $titleColor;
+
+    @media (max-width: 661px) {
+        font-family: 'Inconsolata';
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 1.05;
+    }
+}
+.subtitle-head{
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.05;
+    color: $textColor;
+
+    @media (max-width: 661px) {
+        font-family: 'Inconsolata';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.06;
+    }
+}
+
+.wrapper-section-title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.context-title {
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.06;
+    color: $titleColor;
+}
+.wrapper-card-title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.wrapper-footer-title{
+    margin-bottom: 16px;
+}

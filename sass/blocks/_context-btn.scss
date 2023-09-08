@@ -1,0 +1,29 @@
+.context-btn {
+    height: 37px;
+    min-width: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    color: inherit;
+    transition: box-shadow 500ms;
+    cursor: pointer;
+
+    @media (max-width: 1245px) {
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 32px;
+    }
+
+    @media (max-width: 661px) {
+        height: 32px;
+        font-family: 'Inconsolata';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        }
+}
+

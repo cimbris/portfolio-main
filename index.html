@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cimbriswebdev</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="background-blur"></div>
+<header class="header">
+    <div class="container">
+        <div class="header__center">
+            <a href="#!" class="logo">
+                <svg width="144" height="28" viewBox="0 0 144 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.0469 21.4375L0.015625 15.1719V12L15.0469 5.71875V9.84375L5.76562 13.5781L15.0469 17.2969V21.4375ZM28.5312 0.71875L21.0312 26.9844H16.25L23.7969 0.71875H28.5312ZM45.0625 16.0156C45.0625 18.5573 45 20.3594 44.875 21.4219C44.7604 22.474 44.3854 23.4375 43.75 24.3125C43.125 25.1875 42.276 25.8594 41.2031 26.3281C40.1302 26.7969 38.8802 27.0312 37.4531 27.0312C36.099 27.0312 34.8802 26.8125 33.7969 26.375C32.724 25.9271 31.8594 25.2604 31.2031 24.375C30.5469 23.4896 30.1562 22.526 30.0312 21.4844C29.9062 20.4427 29.8438 18.6198 29.8438 16.0156V11.6875C29.8438 9.14583 29.901 7.34896 30.0156 6.29688C30.1406 5.23438 30.5156 4.26562 31.1406 3.39062C31.776 2.51562 32.6302 1.84375 33.7031 1.375C34.776 0.90625 36.026 0.671875 37.4531 0.671875C38.8073 0.671875 40.0208 0.895833 41.0938 1.34375C42.1771 1.78125 43.0469 2.44271 43.7031 3.32812C44.3594 4.21354 44.75 5.17708 44.875 6.21875C45 7.26042 45.0625 9.08333 45.0625 11.6875V16.0156ZM38.4844 7.70312C38.4844 6.52604 38.4167 5.77604 38.2812 5.45312C38.1562 5.11979 37.8906 4.95312 37.4844 4.95312C37.1406 4.95312 36.875 5.08854 36.6875 5.35938C36.5104 5.61979 36.4219 6.40104 36.4219 7.70312V19.5156C36.4219 20.9844 36.4792 21.8906 36.5938 22.2344C36.7188 22.5781 37 22.75 37.4375 22.75C37.8854 22.75 38.1719 22.5521 38.2969 22.1562C38.4219 21.7604 38.4844 20.8177 38.4844 19.3281V7.70312ZM128.891 5.71875L143.922 11.9688V15.1562L128.891 21.4375V17.3125L138.172 13.5781L128.891 9.85938V5.71875Z" fill="#2eaf84"/>
+                    <path d="M53.7656 5.76562L53.6562 7.67188C54.1146 6.91146 54.6719 6.34375 55.3281 5.96875C55.9948 5.58333 56.7604 5.39062 57.625 5.39062C58.7083 5.39062 59.5938 5.64583 60.2812 6.15625C60.9688 6.66667 61.4115 7.3125 61.6094 8.09375C61.8073 8.86458 61.9062 10.1562 61.9062 11.9688V26.5H55.5938V12.1406C55.5938 10.7135 55.5469 9.84375 55.4531 9.53125C55.3594 9.21875 55.099 9.0625 54.6719 9.0625C54.224 9.0625 53.9427 9.24479 53.8281 9.60938C53.7135 9.96354 53.6562 10.9219 53.6562 12.4844V26.5H47.3438V5.76562H53.7656ZM70.75 3V6.26562H72.4531V9.54688H70.75V20.6406C70.75 22.0052 70.8177 22.7656 70.9531 22.9219C71.099 23.0781 71.6875 23.1562 72.7188 23.1562V26.5H70.1719C68.7344 26.5 67.7083 26.4427 67.0938 26.3281C66.4792 26.2031 65.9375 25.9271 65.4688 25.5C65 25.0625 64.7083 24.5677 64.5938 24.0156C64.4792 23.4531 64.4219 22.1406 64.4219 20.0781V9.54688H63.0625V6.26562H64.4219V3H70.75ZM79.4844 13.7969H73.5625V12.4062C73.5625 10.8021 73.7448 9.56771 74.1094 8.70312C74.4844 7.82812 75.2292 7.05729 76.3438 6.39062C77.4583 5.72396 78.9062 5.39062 80.6875 5.39062C82.8229 5.39062 84.4323 5.77083 85.5156 6.53125C86.599 7.28125 87.25 8.20833 87.4688 9.3125C87.6875 10.4062 87.7969 12.6667 87.7969 16.0938V26.5H81.6562V24.6562C81.2708 25.3958 80.7708 25.9531 80.1562 26.3281C79.5521 26.6927 78.8281 26.875 77.9844 26.875C76.8802 26.875 75.8646 26.5677 74.9375 25.9531C74.0208 25.3281 73.5625 23.9688 73.5625 21.875V20.1719C73.5625 18.6198 73.8073 17.5625 74.2969 17C74.7865 16.4375 76 15.7812 77.9375 15.0312C80.0104 14.2188 81.1198 13.6719 81.2656 13.3906C81.4115 13.1094 81.4844 12.5365 81.4844 11.6719C81.4844 10.5885 81.401 9.88542 81.2344 9.5625C81.0781 9.22917 80.8125 9.0625 80.4375 9.0625C80.0104 9.0625 79.7448 9.20312 79.6406 9.48438C79.5365 9.75521 79.4844 10.4688 79.4844 11.625V13.7969ZM81.4844 16.6406C80.474 17.3802 79.8854 18 79.7188 18.5C79.5625 19 79.4844 19.7188 79.4844 20.6562C79.4844 21.7292 79.5521 22.4219 79.6875 22.7344C79.8333 23.0469 80.1146 23.2031 80.5312 23.2031C80.9271 23.2031 81.1823 23.0833 81.2969 22.8438C81.4219 22.5938 81.4844 21.9479 81.4844 20.9062V16.6406ZM96.4688 1.20312V26.5H89.9688V1.20312H96.4688ZM113.047 16.5H104.875V20.9844C104.875 21.9219 104.943 22.526 105.078 22.7969C105.214 23.0677 105.474 23.2031 105.859 23.2031C106.339 23.2031 106.656 23.026 106.812 22.6719C106.979 22.3073 107.062 21.6094 107.062 20.5781V17.8438H113.047V19.375C113.047 20.6562 112.964 21.6406 112.797 22.3281C112.641 23.0156 112.266 23.75 111.672 24.5312C111.078 25.3125 110.323 25.901 109.406 26.2969C108.5 26.6823 107.359 26.875 105.984 26.875C104.651 26.875 103.474 26.6823 102.453 26.2969C101.432 25.9115 100.635 25.3854 100.062 24.7188C99.5 24.0417 99.1094 23.3021 98.8906 22.5C98.6719 21.6875 98.5625 20.5104 98.5625 18.9688V12.9219C98.5625 11.1094 98.8073 9.68229 99.2969 8.64062C99.7865 7.58854 100.589 6.78646 101.703 6.23438C102.818 5.67188 104.099 5.39062 105.547 5.39062C107.318 5.39062 108.776 5.72917 109.922 6.40625C111.078 7.07292 111.885 7.96354 112.344 9.07812C112.812 10.1823 113.047 11.7396 113.047 13.75V16.5ZM106.719 13.125V11.6094C106.719 10.5365 106.661 9.84375 106.547 9.53125C106.432 9.21875 106.198 9.0625 105.844 9.0625C105.406 9.0625 105.135 9.19792 105.031 9.46875C104.927 9.72917 104.875 10.4427 104.875 11.6094V13.125H106.719ZM127.625 5.76562L125.109 15.6719L128.156 26.5H122.016C121.411 23.7708 120.953 21.4219 120.641 19.4531C120.224 21.9115 119.771 24.2604 119.281 26.5H114L116.719 15.6719L114 5.76562H119.281C120.125 9.99479 120.578 12.3958 120.641 12.9688C121.245 9.4375 121.703 7.03646 122.016 5.76562H127.625Z" fill="#F0E3CA"/>
+                    </svg>
+            </a>
+            <nav class="header__menu">
+                <a href="#about-me" class="header__menu-link">About Me</a>
+                <a href="#skills" class="header__menu-link">Skills</a>
+                <a href="#works" class="header__menu-link">Pet-Projects</a>
+                <a href="#contacts" class="header__menu-link">Contacts</a>
+            </nav>
+        </div>
+    </div>
+    <div class="header__mobile-menu">
+        <a href="#!" class="logo">
+            <svg width="144" height="28" viewBox="0 0 144 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.0469 21.4375L0.015625 15.1719V12L15.0469 5.71875V9.84375L5.76562 13.5781L15.0469 17.2969V21.4375ZM28.5312 0.71875L21.0312 26.9844H16.25L23.7969 0.71875H28.5312ZM45.0625 16.0156C45.0625 18.5573 45 20.3594 44.875 21.4219C44.7604 22.474 44.3854 23.4375 43.75 24.3125C43.125 25.1875 42.276 25.8594 41.2031 26.3281C40.1302 26.7969 38.8802 27.0312 37.4531 27.0312C36.099 27.0312 34.8802 26.8125 33.7969 26.375C32.724 25.9271 31.8594 25.2604 31.2031 24.375C30.5469 23.4896 30.1562 22.526 30.0312 21.4844C29.9062 20.4427 29.8438 18.6198 29.8438 16.0156V11.6875C29.8438 9.14583 29.901 7.34896 30.0156 6.29688C30.1406 5.23438 30.5156 4.26562 31.1406 3.39062C31.776 2.51562 32.6302 1.84375 33.7031 1.375C34.776 0.90625 36.026 0.671875 37.4531 0.671875C38.8073 0.671875 40.0208 0.895833 41.0938 1.34375C42.1771 1.78125 43.0469 2.44271 43.7031 3.32812C44.3594 4.21354 44.75 5.17708 44.875 6.21875C45 7.26042 45.0625 9.08333 45.0625 11.6875V16.0156ZM38.4844 7.70312C38.4844 6.52604 38.4167 5.77604 38.2812 5.45312C38.1562 5.11979 37.8906 4.95312 37.4844 4.95312C37.1406 4.95312 36.875 5.08854 36.6875 5.35938C36.5104 5.61979 36.4219 6.40104 36.4219 7.70312V19.5156C36.4219 20.9844 36.4792 21.8906 36.5938 22.2344C36.7188 22.5781 37 22.75 37.4375 22.75C37.8854 22.75 38.1719 22.5521 38.2969 22.1562C38.4219 21.7604 38.4844 20.8177 38.4844 19.3281V7.70312ZM128.891 5.71875L143.922 11.9688V15.1562L128.891 21.4375V17.3125L138.172 13.5781L128.891 9.85938V5.71875Z" fill="#2eaf84"/>
+                <path d="M53.7656 5.76562L53.6562 7.67188C54.1146 6.91146 54.6719 6.34375 55.3281 5.96875C55.9948 5.58333 56.7604 5.39062 57.625 5.39062C58.7083 5.39062 59.5938 5.64583 60.2812 6.15625C60.9688 6.66667 61.4115 7.3125 61.6094 8.09375C61.8073 8.86458 61.9062 10.1562 61.9062 11.9688V26.5H55.5938V12.1406C55.5938 10.7135 55.5469 9.84375 55.4531 9.53125C55.3594 9.21875 55.099 9.0625 54.6719 9.0625C54.224 9.0625 53.9427 9.24479 53.8281 9.60938C53.7135 9.96354 53.6562 10.9219 53.6562 12.4844V26.5H47.3438V5.76562H53.7656ZM70.75 3V6.26562H72.4531V9.54688H70.75V20.6406C70.75 22.0052 70.8177 22.7656 70.9531 22.9219C71.099 23.0781 71.6875 23.1562 72.7188 23.1562V26.5H70.1719C68.7344 26.5 67.7083 26.4427 67.0938 26.3281C66.4792 26.2031 65.9375 25.9271 65.4688 25.5C65 25.0625 64.7083 24.5677 64.5938 24.0156C64.4792 23.4531 64.4219 22.1406 64.4219 20.0781V9.54688H63.0625V6.26562H64.4219V3H70.75ZM79.4844 13.7969H73.5625V12.4062C73.5625 10.8021 73.7448 9.56771 74.1094 8.70312C74.4844 7.82812 75.2292 7.05729 76.3438 6.39062C77.4583 5.72396 78.9062 5.39062 80.6875 5.39062C82.8229 5.39062 84.4323 5.77083 85.5156 6.53125C86.599 7.28125 87.25 8.20833 87.4688 9.3125C87.6875 10.4062 87.7969 12.6667 87.7969 16.0938V26.5H81.6562V24.6562C81.2708 25.3958 80.7708 25.9531 80.1562 26.3281C79.5521 26.6927 78.8281 26.875 77.9844 26.875C76.8802 26.875 75.8646 26.5677 74.9375 25.9531C74.0208 25.3281 73.5625 23.9688 73.5625 21.875V20.1719C73.5625 18.6198 73.8073 17.5625 74.2969 17C74.7865 16.4375 76 15.7812 77.9375 15.0312C80.0104 14.2188 81.1198 13.6719 81.2656 13.3906C81.4115 13.1094 81.4844 12.5365 81.4844 11.6719C81.4844 10.5885 81.401 9.88542 81.2344 9.5625C81.0781 9.22917 80.8125 9.0625 80.4375 9.0625C80.0104 9.0625 79.7448 9.20312 79.6406 9.48438C79.5365 9.75521 79.4844 10.4688 79.4844 11.625V13.7969ZM81.4844 16.6406C80.474 17.3802 79.8854 18 79.7188 18.5C79.5625 19 79.4844 19.7188 79.4844 20.6562C79.4844 21.7292 79.5521 22.4219 79.6875 22.7344C79.8333 23.0469 80.1146 23.2031 80.5312 23.2031C80.9271 23.2031 81.1823 23.0833 81.2969 22.8438C81.4219 22.5938 81.4844 21.9479 81.4844 20.9062V16.6406ZM96.4688 1.20312V26.5H89.9688V1.20312H96.4688ZM113.047 16.5H104.875V20.9844C104.875 21.9219 104.943 22.526 105.078 22.7969C105.214 23.0677 105.474 23.2031 105.859 23.2031C106.339 23.2031 106.656 23.026 106.812 22.6719C106.979 22.3073 107.062 21.6094 107.062 20.5781V17.8438H113.047V19.375C113.047 20.6562 112.964 21.6406 112.797 22.3281C112.641 23.0156 112.266 23.75 111.672 24.5312C111.078 25.3125 110.323 25.901 109.406 26.2969C108.5 26.6823 107.359 26.875 105.984 26.875C104.651 26.875 103.474 26.6823 102.453 26.2969C101.432 25.9115 100.635 25.3854 100.062 24.7188C99.5 24.0417 99.1094 23.3021 98.8906 22.5C98.6719 21.6875 98.5625 20.5104 98.5625 18.9688V12.9219C98.5625 11.1094 98.8073 9.68229 99.2969 8.64062C99.7865 7.58854 100.589 6.78646 101.703 6.23438C102.818 5.67188 104.099 5.39062 105.547 5.39062C107.318 5.39062 108.776 5.72917 109.922 6.40625C111.078 7.07292 111.885 7.96354 112.344 9.07812C112.812 10.1823 113.047 11.7396 113.047 13.75V16.5ZM106.719 13.125V11.6094C106.719 10.5365 106.661 9.84375 106.547 9.53125C106.432 9.21875 106.198 9.0625 105.844 9.0625C105.406 9.0625 105.135 9.19792 105.031 9.46875C104.927 9.72917 104.875 10.4427 104.875 11.6094V13.125H106.719ZM127.625 5.76562L125.109 15.6719L128.156 26.5H122.016C121.411 23.7708 120.953 21.4219 120.641 19.4531C120.224 21.9115 119.771 24.2604 119.281 26.5H114L116.719 15.6719L114 5.76562H119.281C120.125 9.99479 120.578 12.3958 120.641 12.9688C121.245 9.4375 121.703 7.03646 122.016 5.76562H127.625Z" fill="#F0E3CA"/>
+                </svg>
+        </a>
+        <button class="burger" id="burger">
+            <div class="burger__line burger__line--first"></div>
+            <div class="burger__line burger__line--second"></div>
+            <div class="burger__line burger__line--third"></div>
+        </button>
+        <div class="header__mobile-menu-list">
+            <nav class="header__menu">
+                <a href="#about-me" class="header__menu-link">About Me</a>
+                <a href="#skills" class="header__menu-link">Skills</a>
+                <a href="#works" class="header__menu-link">Pet-Projects</a>
+                <a href="#contacts" class="header__menu-link">Contacts</a>
+            </nav>
+        </div>
+
+    </div>
+</header>
+<main class="main">
+    <section class="preview" id="preview">
+        <div class="container">
+            <div class="preview__center">
+                    <div class="autor">
+                        <div class="autor__wrapper-title">
+                            <h1 class="title-head">Alexey Borisov</h1>
+                        </div>
+                        <div class="autor__wrapper-subtitle">
+                            <h2 class="subtitle-head">Frontend Developer</h2>
+                        </div>
+                        <div class="autor__description">
+                            <p>Frontend developer looking for ideas and projects for himself and others</p>
+                        </div>
+                    </div>
+                    <div class="preview__avatar">
+                    <picture class="preview__avatar-background" >
+                        <source srcset="./img/preview/preview-background-mobile.png" media="(max-width:661px)">
+                        <img srcset="./img/preview/preview-background-desktop.png" alt="avatar" id="parallax-code">
+                    </picture>
+                    <div class="wrapper-avatar">
+                        <div class="shadow-one shadow-one--parallax" id="parallax"></div>
+                        <div class="shadow-two shadow-two--parallax-second" id="parallax-second"></div>
+                        <div class="avatar" id="avatar-parallax">
+                            <img src="./img/stock-pictures/zhenschina2.jpg" alt="" class="kotik">
+                        </div>
+                    </div>
+            </div>      
+            </div>
+        </div>
+    </section>
+    <section class="about-me" id="about-me">
+        <div class="container">
+            <div class="about-me__center">
+                <div class="about-me__icon"><img src="./img/preview/context-icon.png" alt="" ></div>
+                <div class="about-me__text">
+                    <p>
+                        A few years ago, I became interested in developing websites and interfaces. Since then, I have been steadily improving my skills. Now I am developing websites and web applications to order or for myself.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="my-skills" id="skills">
+        <div class="container">
+            <div class="my-skills__center">
+                    <div class="wrapper-section-title">
+                        <h6 class="context-title">My Skills</h6>
+                    </div>
+                    <div class="my-skills__card-row">
+                        <div class="skill-card skill-card--html">
+                            <div class="skill-card__front">
+                                <div class="skill-card__icon">
+                                    <svg width="114" height="129" viewBox="0 0 114 129" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-html">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H113.459L103.058 115.271L57.0445 128.271L10.164 115.271L0 0ZM92.4217 19.3037H21.1948L24.898 61.9296H74.1422L72.724 80.8393L56.8082 85.1728L40.8925 80.8393L39.7894 69.4147H25.6859L27.6556 91.6337L56.8082 99.6703L85.8032 91.5549L89.5852 47.9836H37.8984L36.4802 32.777H91.161L92.4217 19.3037Z" fill="#F0E3CA" class="skill-card__item skill-card__item--html"/>
+                                        </svg>
+                                        
+                                </div>
+                                <button class="context-btn context-btn--html">
+                                    HTML5
+                                </button>
+                            </div>
+                            <div class="skill-card__back">
+                                <button class="skill-card__krestik">
+                                    <img src="./img/icons/krestik.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="skill-card skill-card--css">
+                            <div class="skill-card__front">
+                                <div class="skill-card__icon">
+                                    <svg width="114" height="129" viewBox="0 0 114 129" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-css">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.790283H113.283L102.899 115.883L56.9561 128.863L10.1483 115.883L0 0.790283ZM21.0832 24.0762H91.9637L85.5128 96.3727L56.6414 104.397L27.6127 96.3727L25.4886 74.3455H39.413L40.357 85.5951L56.6414 89.9219L72.4538 85.5951L74.1845 66.7933H24.8593L23.5219 52.7116H75.2859L76.5446 38.0792H22.2632L21.0832 24.0762Z" fill="#F0E3CA" class="skill-card__item skill-card__item--css"/>
+                                        </svg>
+                                        
+                                </div>
+                                <button class="context-btn context-btn--css">
+                                    CSS3
+                                </button>
+                            </div>
+                            <div class="skill-card__back">
+                                <button class="skill-card__krestik">
+                                    <img src="./img/icons/krestik.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="skill-card skill-card--js">
+                            <div class="skill-card__front">
+                                <div class="skill-card__icon">
+                                    <svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-js">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.790283H128V128.79H0V0.790283ZM69.4589 59.4569H57.851V101.998C57.851 103.253 56.7843 108.398 51.3883 108.147C45.9922 107.896 43.5451 101.873 43.5451 101.873L33.9451 107.771C33.9451 107.771 39.2785 118.688 50.0079 118.688C60.7373 118.688 69.4589 114.673 69.4589 101.998V59.4569ZM114.384 68.3667C110.35 61.3505 103.782 58.4369 96.9412 58.8295C90.1007 59.2221 80.1254 61.788 79.8745 75.3314C79.6237 88.8749 96.1255 93.5903 96.1255 93.5903C103.004 96.4836 106.238 98.1967 106.039 102.124C105.295 106.947 102.086 108.21 97.9451 108.21C93.8039 108.21 89.69 106.351 85.8981 100.931L76.3608 106.453C81.4623 114.524 87.4667 118.814 97.9451 118.751C108.424 118.688 118.4 113.292 118.086 102.124C117.773 90.955 112.376 88.0128 101.459 82.9236C94.2631 80.1006 92.1098 78.8452 91.7334 75.3314C91.3569 71.8177 93.8039 69.1824 97.3177 69.1824C100.831 69.1824 103.372 71.0658 105.161 74.3903L114.384 68.3667Z" fill="#F0E3CA" class="skill-card__item skill-card__item--js"/>
+                                        </svg>
+                                        
+                                        
+                                </div>
+                                <button class="context-btn context-btn--js">
+                                    JavaScript
+                                </button>
+                            </div>
+                            <div class="skill-card__back">
+                                <button class="skill-card__krestik">
+                                    <img src="./img/icons/krestik.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="skill-card skill-card--scss">
+                            <div class="skill-card__front">
+                                <div class="skill-card__icon">
+                                    <svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-scss">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M128 64.7903C128 100.137 99.3462 128.79 64 128.79C28.6538 128.79 0 100.137 0 64.7903C0 29.4441 28.6538 0.790283 64 0.790283C99.3462 0.790283 128 29.4441 128 64.7903ZM54.3713 52.3383C54.3713 52.3383 54.0391 51.8407 53.7068 51.8407C53.3746 51.8407 53.1301 51.9486 53.0453 52.3383C53.041 52.9985 53.1848 53.6629 53.5429 54.3302C54.4346 56.0072 55.8641 57.3634 57.6935 58.4809C60.5153 60.2873 64.1424 60.8424 68.1521 60.805C71.0127 60.7878 74.2962 60.3894 77.7809 59.8084C82.4953 58.6966 86.7409 56.8083 90.7305 54.4956C95.0739 51.694 98.7168 47.936 101.521 43.0404C101.696 42.7004 101.871 42.3873 102.047 42.0742C102.998 40.3806 103.948 38.6875 104.675 32.7471C104.675 30.6373 104.294 28.4757 103.348 26.2724C102.363 23.4319 99.9652 21.3465 96.873 19.6322C96.873 19.6322 90.7305 16.3114 82.4292 16.3114C74.1279 16.3114 67.6531 18.4701 67.6531 18.4701C62.2009 20.0219 56.53 22.4539 50.7197 25.4425C46.7877 27.3927 42.9894 29.8492 39.2644 32.5817C33.1866 36.7669 28.8461 42.1875 25.3196 48.1877C24.1158 50.6341 23.4068 53.1711 23.3277 55.8245C23.5909 59.5106 25.1355 62.9422 27.976 66.1178C31.1026 69.7334 34.6521 72.8241 38.6014 75.4143L45.906 80.5602C46.8089 81.1767 47.6782 81.8213 48.4614 82.5378C47.3677 83.0986 46.15 83.7596 44.7425 84.5454C39.9332 86.7847 35.4474 90.3788 31.1285 94.6733C29.8068 96.3373 28.754 98.1494 28.1399 100.318C26.7161 105.348 27.6797 109.247 31.1285 111.939C32.3193 112.563 34.1876 112.936 36.6066 113.101C43.2037 113.066 48.0705 110.4 51.8803 106.129C55.1134 102.635 57.1657 97.9883 57.5253 91.6847C57.6709 89.0508 57.1523 86.5406 55.9832 84.1519C57.924 83.5524 59.9697 83.1981 62.175 83.2165C70.1282 83.9112 77.4947 85.3134 78.7761 94.0074C78.5719 96.2064 77.5192 98.1767 75.4553 99.6523C75.4553 99.6523 73.7957 100.482 74.2933 100.98C74.7909 101.477 75.7876 100.98 75.7876 100.98C78.7833 99.845 80.722 97.6877 81.4325 94.3396C82.061 90.7355 80.4459 87.2665 77.4487 83.881C75.0555 81.5079 72.0641 79.332 64.6659 78.9005C62.3001 78.912 60.127 78.9954 58.3566 79.2327C56.5156 79.5237 55.016 79.851 53.4936 80.353C52.1689 78.7578 50.5231 77.2225 48.561 75.7465L41.0895 69.9362C35.7739 65.7208 32.8687 61.2638 33.1204 56.489C33.1607 49.2649 38.6877 41.2627 57.1931 31.4197C65.7547 26.7613 74.3882 24.3509 83.0922 24.1151C90.7161 24.3509 96.9334 25.9617 97.7015 32.914C97.4138 38.7847 93.942 43.6056 88.7371 47.8555C82.0135 53.0474 74.2775 56.1726 65.1621 56.489C60.452 56.3739 56.7098 55.1558 54.3713 52.3383ZM51.14 86.1782C49.2473 87.154 47.4183 88.2783 45.5893 89.4026C45.252 89.6099 44.9148 89.8172 44.5771 90.0236C40.7486 92.6986 38.0204 95.7548 36.2758 99.1547C35.597 100.429 35.2533 101.83 35.1138 103.305C35.1051 105.831 36.3003 106.59 38.1023 106.459C41.649 106.676 45.0014 104.509 48.2302 100.814C50.3587 97.9797 51.7782 94.8113 51.8832 91.0188C52.0001 89.1001 51.7116 87.5207 51.14 86.1782Z" fill="#F0E3CA" class="skill-card__item skill-card__item--scss"/>
+                                        </svg>
+                                        
+                                        
+                                </div>
+                                <button class="context-btn context-btn--scss">
+                                    SCSS
+                                </button>
+                            </div>
+                            <div class="skill-card__back">
+                                <button class="skill-card__krestik">
+                                    <img src="./img/icons/krestik.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="skill-card skill-card--git">
+                            <div class="skill-card__front">
+                                <div class="skill-card__icon">
+                                    <svg width="129" height="129" viewBox="0 0 129 129" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-git">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2498 0.790283C7.86095 0.790283 0.249793 8.40144 0.249793 17.7903V33.9454H0.249756V44.8098H0.249793V64.7903V111.79C0.249793 121.179 7.86095 128.79 17.2498 128.79H64.4995H111.749C121.138 128.79 128.749 121.179 128.749 111.79V64.7903V17.7903C128.749 8.40144 121.138 0.790283 111.749 0.790283H64.4995H17.2498ZM0.249793 44.8098H27.8026C29.7752 49.6096 34.4968 52.9893 40.0078 52.9893C41.8017 52.9893 43.512 52.6312 45.071 51.9826L78.5781 85.4897C77.9352 87.0428 77.5805 88.7453 77.5805 90.5308C77.5805 97.8155 83.486 103.721 90.7708 103.721C98.0555 103.721 103.961 97.8155 103.961 90.5308C103.961 83.246 98.0555 77.3405 90.7708 77.3405C89.2761 77.3405 87.8396 77.5891 86.5002 78.0472L53.2628 44.8098H78.628C80.6006 49.6096 85.3222 52.9893 90.8332 52.9893C98.118 52.9893 104.023 47.0838 104.023 39.7991C104.023 32.5143 98.118 26.6088 90.8332 26.6088C85.6508 26.6088 81.1664 29.5975 79.0097 33.9454H51.8313C49.6746 29.5975 45.1902 26.6088 40.0078 26.6088C34.8254 26.6088 30.341 29.5975 28.1843 33.9454H0.249793V44.8098Z" fill="#F0E3CA" class="skill-card__item skill-card__item--git" />
+                                        </svg>
+                                </div>
+                                <button class="context-btn context-btn--git">
+                                    Git
+                                </button>
+                            </div>
+                            <div class="skill-card__back">
+                                <button class="skill-card__krestik">
+                                    <img src="./img/icons/krestik.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-works" id="works">
+        <div class="container">
+            <div class="my-works__center">
+                <div class="wrapper-section-title">
+                    <h6 class="context-title">My Works</h6>
+                </div>
+                <div class="my-works__card-row">
+                    <div class="project-card">
+                        <div class="project-card__img"><img src="./img/my-works/Rectangle 18.jpg" alt="project"></div>
+                        <div class="project-card__info">
+                            <div class="project-card__top">
+                                <div class="wrapper-card-title">
+                                    <h6 class="context-title">News Blog</h6>
+                                </div>
+                                <p class="project-card__stack">HTML, SCSS, JS</p>
+                            </div>
+                            <div class="project-card__bottom">
+                                <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="project-card__action">
+                                <a href="#!" class="context-link">See more →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card__img"><img src="./img/my-works/Rectangle 18.jpg" alt="project"></div>
+                        <div class="project-card__info">
+                            <div class="project-card__top">
+                                <div class="wrapper-card-title">
+                                    <h6 class="context-title">News Blog</h6>
+                                </div>
+                                <p class="project-card__stack">HTML, SCSS, JS</p>
+                            </div>
+                            <div class="project-card__bottom">
+                                <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="project-card__action">
+                                <a href="#!" class="context-link">See more →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card__img"><img src="./img/my-works/Rectangle 18.jpg" alt="project"></div>
+                        <div class="project-card__info">
+                            <div class="project-card__top">
+                                <div class="wrapper-card-title">
+                                    <h6 class="context-title">News Blog</h6>
+                                </div>
+                                <p class="project-card__stack">HTML, SCSS, JS</p>
+                            </div>
+                            <div class="project-card__bottom">
+                                <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="project-card__action">
+                                <a href="#!" class="context-link">See more →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews__center">
+                <div class="wrapper-section-title">
+                    <h6 class="context-title">Reviews</h6>
+                </div>
+                <div class="reviews-slider">
+                    <div class="slider-item">
+                        <div class="slider-item__holder-avatar">
+                            <img src="./img/stock-pictures/muzhik1.jpg" alt="photo" class="photo">
+                        </div>
+                        <div class="slider-item__review-text">
+                            <p>Thanks to this web developer for his professionalism and responsible approach to work. He not only created a great website for our company, but also helped us improve its functionality and attractiveness. I highly recommend its services to anyone who is looking for high-quality website development.</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item__holder-avatar">
+                            <img src="./img/stock-pictures/zhenschina1.jpg" alt="photo" class="photo">
+                        </div>
+                        <div class="slider-item__review-text">
+                            <p>Thanks to this web developer for his professionalism and responsible approach to work. He not only created a great website for our company, but also helped us improve its functionality and attractiveness. I highly recommend its services to anyone who is looking for high-quality website development.</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item__holder-avatar">
+                            <img src="./img/stock-pictures/muzhik2.jpg" alt="photo" class="photo">
+                        </div>
+                        <div class="slider-item__review-text">
+                            <p>Thanks to this web developer for his professionalism and responsible approach to work. He not only created a great website for our company, but also helped us improve its functionality and attractiveness. I highly recommend its services to anyone who is looking for high-quality website development.</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item__holder-avatar">
+                            <img src="./img/stock-pictures/zhenschina2.jpg" alt="photo" class="photo">
+                        </div>
+                        <div class="slider-item__review-text">
+                            <p>Thanks to this web developer for his professionalism and responsible approach to work. He not only created a great website for our company, but also helped us improve its functionality and attractiveness. I highly recommend its services to anyone who is looking for high-quality website development.</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item__holder-avatar">
+                            <img src="./img/stock-pictures/muzhik3.jpg" alt="photo" class="photo">
+                        </div>
+                        <div class="slider-item__review-text">
+                            <p>Thanks to this web developer for his professionalism and responsible approach to work. He not only created a great website for our company, but also helped us improve its functionality and attractiveness. I highly recommend its services to anyone who is looking for high-quality website development.</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item__holder-avatar">
+                            <img src="./img/stock-pictures/pacani-rebyata.jpg" alt="photo" class="photo">
+                        </div>
+                        <div class="slider-item__review-text">
+                            <p>Thanks to this web developer for his professionalism and responsible approach to work. He not only created a great website for our company, but also helped us improve its functionality and attractiveness. I highly recommend its services to anyone who is looking for high-quality website development.</p>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="slider-item__holder-avatar">
+                            <img src="./img/stock-pictures/muzhik4.jpg" alt="photo" class="photo">
+                        </div>
+                        <div class="slider-item__review-text">
+                            <p>Thanks to this web developer for his professionalism and responsible approach to work. He not only created a great website for our company, but also helped us improve its functionality and attractiveness. I highly recommend its services to anyone who is looking for high-quality website development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <form class="form__center" action="#!" method="post">
+                <div class="wrapper-section-title">
+                    <h6 class="context-title">Your opinion about my work</h6>
+                </div>
+                <div class="form__items">
+                    <label class="form__item" for="input-email">
+                        <span class="form-item__fake-placeholder">Enter your email</span>
+                        <input type="email" class="form-item__email" name="email" required="" placeholder="Your email here" id="input-email">
+                    </label>
+                    <label class="form__item" for="input-message">
+                        <span class="form-item__fake-placeholder">What would you like to see in my future projects</span>
+                        <textarea name="message" id="input-message" class="form-item__comment" required="" placeholder="Leave your comment here"></textarea>
+                    </label>
+                    <div class="form__item">
+                        <input type="submit" class="form__submit-button" value="Send">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main> 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__center">
+                <div class="footer__copyright">
+                    <div class="footer__logo">
+                        <div class="logo logo--footer">
+                            <svg width="144" height="28" viewBox="0 0 144 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__logo-svg">
+                            <path d="M15.0469 21.4375L0.015625 15.1719V12L15.0469 5.71875V9.84375L5.76562 13.5781L15.0469 17.2969V21.4375ZM28.5312 0.71875L21.0312 26.9844H16.25L23.7969 0.71875H28.5312ZM45.0625 16.0156C45.0625 18.5573 45 20.3594 44.875 21.4219C44.7604 22.474 44.3854 23.4375 43.75 24.3125C43.125 25.1875 42.276 25.8594 41.2031 26.3281C40.1302 26.7969 38.8802 27.0312 37.4531 27.0312C36.099 27.0312 34.8802 26.8125 33.7969 26.375C32.724 25.9271 31.8594 25.2604 31.2031 24.375C30.5469 23.4896 30.1562 22.526 30.0312 21.4844C29.9062 20.4427 29.8438 18.6198 29.8438 16.0156V11.6875C29.8438 9.14583 29.901 7.34896 30.0156 6.29688C30.1406 5.23438 30.5156 4.26562 31.1406 3.39062C31.776 2.51562 32.6302 1.84375 33.7031 1.375C34.776 0.90625 36.026 0.671875 37.4531 0.671875C38.8073 0.671875 40.0208 0.895833 41.0938 1.34375C42.1771 1.78125 43.0469 2.44271 43.7031 3.32812C44.3594 4.21354 44.75 5.17708 44.875 6.21875C45 7.26042 45.0625 9.08333 45.0625 11.6875V16.0156ZM38.4844 7.70312C38.4844 6.52604 38.4167 5.77604 38.2812 5.45312C38.1562 5.11979 37.8906 4.95312 37.4844 4.95312C37.1406 4.95312 36.875 5.08854 36.6875 5.35938C36.5104 5.61979 36.4219 6.40104 36.4219 7.70312V19.5156C36.4219 20.9844 36.4792 21.8906 36.5938 22.2344C36.7188 22.5781 37 22.75 37.4375 22.75C37.8854 22.75 38.1719 22.5521 38.2969 22.1562C38.4219 21.7604 38.4844 20.8177 38.4844 19.3281V7.70312ZM128.891 5.71875L143.922 11.9688V15.1562L128.891 21.4375V17.3125L138.172 13.5781L128.891 9.85938V5.71875Z" fill="#2eaf84"/>
+                            <path d="M53.7656 5.76562L53.6562 7.67188C54.1146 6.91146 54.6719 6.34375 55.3281 5.96875C55.9948 5.58333 56.7604 5.39062 57.625 5.39062C58.7083 5.39062 59.5938 5.64583 60.2812 6.15625C60.9688 6.66667 61.4115 7.3125 61.6094 8.09375C61.8073 8.86458 61.9062 10.1562 61.9062 11.9688V26.5H55.5938V12.1406C55.5938 10.7135 55.5469 9.84375 55.4531 9.53125C55.3594 9.21875 55.099 9.0625 54.6719 9.0625C54.224 9.0625 53.9427 9.24479 53.8281 9.60938C53.7135 9.96354 53.6562 10.9219 53.6562 12.4844V26.5H47.3438V5.76562H53.7656ZM70.75 3V6.26562H72.4531V9.54688H70.75V20.6406C70.75 22.0052 70.8177 22.7656 70.9531 22.9219C71.099 23.0781 71.6875 23.1562 72.7188 23.1562V26.5H70.1719C68.7344 26.5 67.7083 26.4427 67.0938 26.3281C66.4792 26.2031 65.9375 25.9271 65.4688 25.5C65 25.0625 64.7083 24.5677 64.5938 24.0156C64.4792 23.4531 64.4219 22.1406 64.4219 20.0781V9.54688H63.0625V6.26562H64.4219V3H70.75ZM79.4844 13.7969H73.5625V12.4062C73.5625 10.8021 73.7448 9.56771 74.1094 8.70312C74.4844 7.82812 75.2292 7.05729 76.3438 6.39062C77.4583 5.72396 78.9062 5.39062 80.6875 5.39062C82.8229 5.39062 84.4323 5.77083 85.5156 6.53125C86.599 7.28125 87.25 8.20833 87.4688 9.3125C87.6875 10.4062 87.7969 12.6667 87.7969 16.0938V26.5H81.6562V24.6562C81.2708 25.3958 80.7708 25.9531 80.1562 26.3281C79.5521 26.6927 78.8281 26.875 77.9844 26.875C76.8802 26.875 75.8646 26.5677 74.9375 25.9531C74.0208 25.3281 73.5625 23.9688 73.5625 21.875V20.1719C73.5625 18.6198 73.8073 17.5625 74.2969 17C74.7865 16.4375 76 15.7812 77.9375 15.0312C80.0104 14.2188 81.1198 13.6719 81.2656 13.3906C81.4115 13.1094 81.4844 12.5365 81.4844 11.6719C81.4844 10.5885 81.401 9.88542 81.2344 9.5625C81.0781 9.22917 80.8125 9.0625 80.4375 9.0625C80.0104 9.0625 79.7448 9.20312 79.6406 9.48438C79.5365 9.75521 79.4844 10.4688 79.4844 11.625V13.7969ZM81.4844 16.6406C80.474 17.3802 79.8854 18 79.7188 18.5C79.5625 19 79.4844 19.7188 79.4844 20.6562C79.4844 21.7292 79.5521 22.4219 79.6875 22.7344C79.8333 23.0469 80.1146 23.2031 80.5312 23.2031C80.9271 23.2031 81.1823 23.0833 81.2969 22.8438C81.4219 22.5938 81.4844 21.9479 81.4844 20.9062V16.6406ZM96.4688 1.20312V26.5H89.9688V1.20312H96.4688ZM113.047 16.5H104.875V20.9844C104.875 21.9219 104.943 22.526 105.078 22.7969C105.214 23.0677 105.474 23.2031 105.859 23.2031C106.339 23.2031 106.656 23.026 106.812 22.6719C106.979 22.3073 107.062 21.6094 107.062 20.5781V17.8438H113.047V19.375C113.047 20.6562 112.964 21.6406 112.797 22.3281C112.641 23.0156 112.266 23.75 111.672 24.5312C111.078 25.3125 110.323 25.901 109.406 26.2969C108.5 26.6823 107.359 26.875 105.984 26.875C104.651 26.875 103.474 26.6823 102.453 26.2969C101.432 25.9115 100.635 25.3854 100.062 24.7188C99.5 24.0417 99.1094 23.3021 98.8906 22.5C98.6719 21.6875 98.5625 20.5104 98.5625 18.9688V12.9219C98.5625 11.1094 98.8073 9.68229 99.2969 8.64062C99.7865 7.58854 100.589 6.78646 101.703 6.23438C102.818 5.67188 104.099 5.39062 105.547 5.39062C107.318 5.39062 108.776 5.72917 109.922 6.40625C111.078 7.07292 111.885 7.96354 112.344 9.07812C112.812 10.1823 113.047 11.7396 113.047 13.75V16.5ZM106.719 13.125V11.6094C106.719 10.5365 106.661 9.84375 106.547 9.53125C106.432 9.21875 106.198 9.0625 105.844 9.0625C105.406 9.0625 105.135 9.19792 105.031 9.46875C104.927 9.72917 104.875 10.4427 104.875 11.6094V13.125H106.719ZM127.625 5.76562L125.109 15.6719L128.156 26.5H122.016C121.411 23.7708 120.953 21.4219 120.641 19.4531C120.224 21.9115 119.771 24.2604 119.281 26.5H114L116.719 15.6719L114 5.76562H119.281C120.125 9.99479 120.578 12.3958 120.641 12.9688C121.245 9.4375 121.703 7.03646 122.016 5.76562H127.625Z" fill="#F0E3CA"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="footer__text">
+                        <p>If you liked my work and you need me, I`m ready to talk to you.</p>
+                    </div>
+                </div>
+                <div class="footer__contacts" id="contacts">
+                    <div class="wrapper-footer-title">
+                        <h6 class="context-title">
+                            Contacts
+                        </h6>
+                    </div>
+                    <div class="social-links">
+                        <div class="wrapper-social-link">
+                            <div class="social-link-img">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.1667 29.3333H5.83335C5.12611 29.3333 4.44783 29.0523 3.94774 28.5523C3.44764 28.0522 3.16669 27.3738 3.16669 26.6666V12.0653C3.18885 11.6246 3.31839 11.1959 3.54404 10.8167C3.76968 10.4374 4.08458 10.1191 4.46135 9.88928L15.128 3.48931C15.5423 3.2409 16.0163 3.10968 16.4993 3.10968C16.9824 3.10968 17.4564 3.2409 17.8707 3.48931L28.5374 9.88928C29.3386 10.3733 29.8307 11.24 29.8334 12.176V26.6666C29.8334 27.3738 29.5524 28.0522 29.0523 28.5523C28.5522 29.0523 27.874 29.3333 27.1667 29.3333ZM5.83335 13.1573V26.6666H27.1667V13.1573L16.5 20.2679L5.83335 13.1573ZM16.5 5.77597L7.58802 11.1226L16.5 17.064L25.4107 11.1226L16.5 5.77597Z" fill="#F0E3CA"/>
+                                </svg>
+                            </div>
+                            <a href="mailto:mail@htmlacademy.ru" class="social-link">ontalex@ya.ru
+                            </a>
+                        </div>
+                        <div class="wrapper-social-link">
+                            <div class="social-link-img">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_48_19)">
+                                    <path d="M16.5 0.396019C7.661 0.396019 0.5 7.56302 0.5 16.396C0.5 23.4691 5.084 29.464 11.437 31.579C12.24 31.73 12.53 31.235 12.53 30.807C12.53 30.427 12.521 29.422 12.515 28.088C8.062 29.052 7.124 25.937 7.124 25.937C6.395 24.0931 5.343 23.598 5.343 23.598C3.895 22.609 5.458 22.63 5.458 22.63C7.062 22.739 7.906 24.275 7.906 24.275C9.33299 26.723 11.65 26.015 12.567 25.603C12.707 24.572 13.124 23.863 13.578 23.468C10.026 23.067 6.291 21.692 6.291 15.561C6.291 13.81 6.911 12.384 7.936 11.264C7.759 10.863 7.217 9.23301 8.077 7.02902C8.077 7.02902 9.41604 6.60202 12.477 8.67004C13.7809 8.31538 15.1258 8.13351 16.477 8.12901C17.837 8.138 19.196 8.31599 20.477 8.67004C23.52 6.60202 24.858 7.02902 24.858 7.02902C25.717 9.23301 25.175 10.862 25.019 11.264C26.034 12.384 26.654 13.811 26.654 15.561C26.654 21.706 22.914 23.0611 19.358 23.452C19.914 23.931 20.435 24.916 20.435 26.411C20.435 28.551 20.415 30.275 20.415 30.796C20.415 31.212 20.695 31.712 21.519 31.551C27.919 29.458 32.498 23.458 32.498 16.395C32.498 7.56202 25.337 0.39502 16.498 0.39502L16.5 0.396019Z" fill="#F0E3CA"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_48_19">
+                                    <rect width="32" height="32" fill="white" transform="translate(0.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <a href="https://github.com/ontalex" class="social-link">Ontalex
+                            </a>
+                        </div>
+                        <div class="wrapper-social-link">
+                            <div class="social-link-img">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.1667 25.3333H13.8334C11.0044 25.3333 8.29126 24.2095 6.29089 22.2091C4.2905 20.2088 3.16669 17.4956 3.16669 14.6667V8H8.50002V14.6667C8.50002 16.0811 9.06192 17.4377 10.0622 18.4379C11.0623 19.4381 12.4189 20 13.8334 20V8H19.1667V14L19.2067 13.9947C20.668 13.8123 22.0125 13.1025 22.9873 11.9986C23.962 10.8946 24.4999 9.47269 24.5 8H29.8334L29.3774 10.2813C29.1042 11.6468 28.5229 12.9318 27.6776 14.0384C26.8324 15.145 25.7455 16.044 24.5 16.6667C25.7111 17.0702 26.7915 17.7918 27.628 18.7562C28.4645 19.7205 29.0263 20.892 29.2547 22.148L29.8334 25.3333H24.5C24.4999 23.8606 23.962 22.4387 22.9873 21.3348C22.0125 20.2309 20.668 19.521 19.2067 19.3387V25.3387L19.1667 25.3333Z" stroke="#F0E3CA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <a href="https://vk.com/ontalex" class="social-link">@ontalex
+                            </a>
+                        </div>
+                        <div class="wrapper-social-link">
+                            <div class="social-link-img">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.72 0C8.45734 0 5.83334 2.73733 5.83334 6.09067C5.83334 8.12933 6.804 9.94 8.296 11.0453C7.52704 11.6214 6.90375 12.3697 6.47609 13.2301C6.04843 14.0905 5.8283 15.0392 5.83334 16C5.83334 18.04 6.804 19.8493 8.296 20.9547C7.52704 21.5308 6.90375 22.279 6.47609 23.1395C6.04843 23.9999 5.8283 24.9485 5.83334 25.9093C5.83334 29.2627 8.45734 32 11.72 32C14.9813 32 17.6067 29.2627 17.6067 25.9093V20.76C18.6378 21.6197 19.9375 22.091 21.28 22.092C24.5427 22.0907 27.1667 19.3533 27.1667 16C27.172 15.0391 26.952 14.0904 26.5243 13.2299C26.0967 12.3694 25.4732 11.6212 24.704 11.0453C25.473 10.4692 26.0963 9.72096 26.5239 8.86055C26.9516 8.00013 27.1717 7.05149 27.1667 6.09067C27.1667 2.73733 24.5427 0 21.28 0H11.72V0ZM8.04534 6.09067C8.04534 3.96933 9.70134 2.27067 11.72 2.27067H15.3933V9.91067H11.72C9.70134 9.91067 8.04534 8.21067 8.04534 6.09067V6.09067ZM21.28 9.90933H17.6067V2.26933H21.28C23.3 2.26933 24.9547 3.96933 24.9547 6.09067C24.9547 8.21067 23.3 9.90933 21.28 9.90933ZM8.04667 16C8.04667 13.88 9.70267 12.18 11.7213 12.18H15.3947V19.82H11.72C9.7 19.82 8.04534 18.12 8.04534 16H8.04667ZM17.6067 16C17.6067 13.88 19.2627 12.18 21.2813 12.18C23.3013 12.18 24.956 13.8787 24.956 16C24.956 18.12 23.3013 19.82 21.2813 19.82C19.2627 19.82 17.608 18.1213 17.608 16H17.6067ZM8.04667 25.9093C8.04667 23.7893 9.70267 22.0907 11.7213 22.0907H15.3947V25.9093C15.3947 28.0307 13.7413 29.7293 11.7213 29.7293C9.70267 29.7293 8.04667 28.0307 8.04667 25.9093Z" fill="#F0E3CA"/>
+                                </svg>
+                            </div>
+                            <a href="https://www.figma.com/@ontalex" class="social-link">Ontalex
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="./js/libs/slick.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
+

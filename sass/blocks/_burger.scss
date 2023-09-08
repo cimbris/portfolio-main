@@ -1,0 +1,28 @@
+.burger {
+    width: 36px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+    transition: 300ms;
+}
+.burger__line {
+    width: 36px;
+    height: 4px;
+    background-color: $textColor;
+    transition: transform 0.3s;
+
+}
+.burger.active{
+    transform: translateX(35%);
+    .burger__line--first{
+        transform: rotate(45deg) translateY(14px);
+    }
+    .burger__line--second{
+        transform: scale(0);
+    }
+    .burger__line--third{
+        transform: rotate(-45deg) translateY(-14px);
+    }
+}

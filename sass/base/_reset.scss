@@ -1,0 +1,106 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+button{
+background-color: transparent;
+border: none;
+
+}
+
+html {
+height: 100%; /* sticky footer */
+scroll-behavior: smooth;
+
+}
+
+body {
+height: 100%; /* sticky footer */
+display: flex; /* sticky footer */
+flex-direction: column; /* sticky footer */
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+color: $textColor;
+}
+
+body > * {
+flex-shrink: 0; /* sticky footer */
+}
+
+input, textarea, button {
+font-family: inherit;
+padding: 0;
+margin: 0;
+border: none;
+outline: none;
+box-sizing: border-box;
+}
+
+label {
+cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+}
+
+img, svg{
+display: block;
+max-width: 100%;
+height: auto;
+object-fit: contain;
+}
+
+ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+fieldset {
+border: none;
+margin: 0;
+padding: 0;
+}
+
+legend {
+display: block;
+margin: 0;
+padding: 0;
+border: none;
+}
+
+/* Grid styles */
+
+// .container {
+// width: 1200px;
+// margin-right: auto;
+// margin-left: auto;
+// padding-left: 15px;
+// padding-right: 15px;
+// }
+
+/* Utility */
+
+.hidden {
+display: none !important;
+}
+
+/* Sticky Footer */
+
+.footer {
+margin-top: auto; /* sticky footer */
+}
+a ,a:visited{
+    color: inherit;
+    text-decoration: none;
+}

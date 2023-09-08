@@ -1,0 +1,26 @@
+// ---------base
+@import './base/var';
+@import './base/reset';
+@import './base/base';
+
+// ----------------sections
+
+@import './sections/header';
+@import './sections/preview';
+@import './sections/about-me';
+@import './sections/skills';
+@import './sections/works';
+@import './sections/footer';
+@import './sections/reviews';
+@import './sections/form';
+
+// ---------------blocks
+@import './blocks/avatar';
+@import './blocks/autor';
+@import './blocks/titles';
+@import './blocks/context-btn';
+@import './blocks/project-cards';
+@import './blocks/links';
+@import './blocks/social-links';
+@import './blocks/burger';
+@import './blocks/slider-review';
