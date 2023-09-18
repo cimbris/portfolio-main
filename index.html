@@ -325,24 +325,28 @@
     </section>
     <section class="form">
         <div class="container">
-            <form class="form__center" action="#!" method="post">
-                <div class="wrapper-section-title">
-                    <h6 class="context-title">Your opinion about my work</h6>
-                </div>
-                <div class="form__items">
-                    <label class="form__item" for="input-email">
-                        <span class="form-item__fake-placeholder">Enter your email</span>
-                        <input type="email" class="form-item__email" name="email" required="" placeholder="Your email here" id="input-email">
-                    </label>
-                    <label class="form__item" for="input-message">
-                        <span class="form-item__fake-placeholder">What would you like to see in my future projects</span>
-                        <textarea name="message" id="input-message" class="form-item__comment" required="" placeholder="Leave your comment here"></textarea>
-                    </label>
-                    <div class="form__item">
-                        <input type="submit" class="form__submit-button" value="Send">
+            <div class='form-wrapper'>
+                <form class="form__center" action="#!" method="post" id="form">
+                    
+                    <div class="wrapper-section-title">
+                        <h6 class="context-title">Your opinion about my work</h6>
                     </div>
-                </div>
-            </form>
+                    <div class="form__items">
+                        <label class="form__item" for="input-email">
+                            <span class="form-item__fake-placeholder">Enter your email</span>
+                            <input type="email" class="form-item__email" name="email" required="" placeholder="Your email here" id="input-email" name="">
+                        </label>
+                        <label class="form__item" for="input-message">
+                            <span class="form-item__fake-placeholder">What would you like to see in my future projects</span>
+                            <textarea name="message" id="input-message" class="form-item__comment" required="" placeholder="Leave your comment here"></textarea>
+                        </label>
+                        <div class="form__item">
+                            <input type="submit" class="form__submit-button" value="Send">
+                        </div>
+                    </div>
+                </form>
+                <div id="answer"></div>
+            </div>
         </div>
     </section>
 </main> 
@@ -422,6 +426,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 <script src="./js/libs/slick.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/libs/jquery-validation/jquery.validate.min.js"></script>
+<script src="./js/validation.js"></script>
 </body>
 </html>
 
