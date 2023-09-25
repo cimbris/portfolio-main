@@ -680,7 +680,7 @@ select:-webkit-autofill:focus {
 
 .skill-card.active {
   z-index: 6;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%) !important;
@@ -825,6 +825,11 @@ select:-webkit-autofill:focus {
   padding-top: 100px;
   padding-bottom: 64px;
 }
+@media (max-width: 661px) {
+  .form .context-title {
+    font-size: 28px;
+  }
+}
 
 .form__items {
   display: -webkit-box;
@@ -841,8 +846,7 @@ select:-webkit-autofill:focus {
 }
 
 .form__item {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -852,78 +856,94 @@ select:-webkit-autofill:focus {
           flex-direction: column;
   row-gap: 7px;
 }
-
-.form-item__fake-placeholder {
-  margin: 0 auto;
-  padding-bottom: 5px;
-  font-family: 'Inconsolata';
-  text-align: center;
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 1.05;
-  color: wheat;
+@media (max-width: 1245px) {
+  .form__item {
+    width: 500px;
+  }
+}
+@media (max-width: 661px) {
+  .form__item {
+    width: 400px;
+  }
 }
 
-.form-item__email {
-  max-width: 800px;
+.form-item__input {
+  min-height: 80px;
   width: 100%;
-  max-height: 80px;
   padding-right: 15px;
   padding-left: 15px;
+  display: block;
   background-color: #1f1e1b;
   font-family: 'Inconsolata';
   font-weight: 700;
   font-size: 27px;
   line-height: 1.05;
-  color: wheat;
+  color: #1f1e1b;
+  border: 2px solid rgba(187, 187, 187, 0);
+}
+.form-item__input::-webkit-input-placeholder {
+  font-family: 'Inconsolata';
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.05;
+  color: rgba(118, 126, 123, 0.527);
+  border: 2px solid rgba(187, 187, 187, 0);
+}
+.form-item__input:-ms-input-placeholder {
+  font-family: 'Inconsolata';
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.05;
+  color: rgba(118, 126, 123, 0.527);
+  border: 2px solid rgba(187, 187, 187, 0);
+}
+.form-item__input::-ms-input-placeholder {
+  font-family: 'Inconsolata';
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.05;
+  color: rgba(118, 126, 123, 0.527);
+  border: 2px solid rgba(187, 187, 187, 0);
+}
+.form-item__input::placeholder {
+  font-family: 'Inconsolata';
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.05;
+  color: rgba(118, 126, 123, 0.527);
   border: 2px solid rgba(187, 187, 187, 0);
 }
 
-.form-item__email:focus {
+.form-item__input:focus {
   border-color: rgba(187, 187, 187, 0.377);
 }
 
-.form-item__comment {
-  max-width: 800px;
-  max-height: 200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #1f1e1b;
-  font-family: 'Inconsolata';
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 1.05;
-  color: wheat;
+.form-item__input--comment {
   resize: none;
-  border: 2px solid rgba(187, 187, 187, 0);
+  min-height: 200px;
   /* ползунок скроллбара */
 }
-.form-item__comment::-webkit-scrollbar {
+.form-item__input--comment::-webkit-scrollbar {
   width: 4px;
   /* ширина для вертикального скролла */
   height: 8px;
   /* высота для горизонтального скролла */
   background-color: rgba(245, 222, 179, 0.315);
 }
-.form-item__comment::-webkit-scrollbar-thumb {
+.form-item__input--comment::-webkit-scrollbar-thumb {
   background-color: #000000;
   border-radius: 9em;
   -webkit-box-shadow: inset 1px 1px 10px #f3faf7;
           box-shadow: inset 1px 1px 10px #f3faf7;
 }
-.form-item__comment::-webkit-scrollbar-thumb:hover {
+.form-item__input--comment::-webkit-scrollbar-thumb:hover {
   background-color: #09e99e;
 }
 
-.form-item__form-field:focus {
-  border-color: rgba(187, 187, 187, 0.377);
-}
-
 .form__submit-button {
-  width: 300px;
-  height: 50px;
+  padding: 10px 50px;
+  max-width: 300px;
+  margin: 0 auto;
   border-radius: 50px;
   background-color: #1f1e1b;
   -webkit-transition: 200ms;
@@ -943,6 +963,24 @@ select:-webkit-autofill:focus {
           box-shadow: 0px 0px 4px 1px #2eaf84, inset 0px 0px 1px 1px #2eaf84;
   -webkit-transition: 200ms;
   transition: 200ms;
+}
+
+.error {
+  font-family: 'Inconsolata';
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.05;
+  color: #f76262;
+}
+
+.form-item__fake-placeholder {
+  padding-bottom: 5px;
+  font-family: 'Inconsolata';
+  text-align: center;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.05;
+  color: wheat;
 }
 
 .wrapper-avatar {

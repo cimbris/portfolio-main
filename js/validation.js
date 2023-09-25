@@ -17,7 +17,7 @@ $(function () {
 	//   сообщения при несоблюдении правил
 	  messages: {
 		 email: { required: 'Введите email', email: 'Отсутствует символ @' },
-		 message: { required: 'Поле не может быть пустым' }
+		 message: { required: 'This field can not be empty' }
 	  },
 
 	//   вызываем асинхронный запрос(асинхронный тк страница продолжает работать)

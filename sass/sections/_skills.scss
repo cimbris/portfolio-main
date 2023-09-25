@@ -2,8 +2,6 @@
     padding-top: 64px;
     padding-bottom: 64px;
 }
-.my-skills__center {
-}
 
 .my-skills__card-row {
     display: flex;
@@ -23,9 +21,6 @@
     position: relative;
     transition: min-width 0.5s min-height 0.5s;
 
-
-
-    
     @media (max-width: 661px) {
         width: 285px;
         min-height: 60px;
@@ -73,12 +68,7 @@
         border-radius: 10px;
         }
 
-
     &:hover{
-
-        
-
-       
 
         .skill-card__item--html{
             fill: #FC490B;
@@ -153,7 +143,7 @@
 .skill-card.active{
 
     z-index: 6;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) !important;
@@ -166,6 +156,7 @@
     }
 
     .skill-card__back{
+        
         transform: perspective(600px) rotateY(0deg);
         
     }
