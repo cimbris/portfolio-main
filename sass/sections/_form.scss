@@ -30,6 +30,25 @@
     @media (max-width: 661px) {
         width: 400px;
     }
+
+    &--rules{
+        flex-direction: row-reverse;
+        justify-content: center;
+        column-gap: 25px;
+
+        .private-policy{
+            letter-spacing: 1px;
+        }
+        .private-policy__link{
+            color: #2eaf84;
+            align-items: center;
+        }
+        .private-policy__link:hover{
+            text-decoration: underline;
+            text-underline-offset: 3px;
+
+        }
+    }
 }
 .form-item__input {
     min-height: 80px;
@@ -42,7 +61,7 @@
     font-weight: 700;
     font-size: 27px;
     line-height: 1.05;
-    color: #1f1e1b;
+    color: $textColor;
     border: 2px solid rgba(187, 187, 187, 0);
 
     &::placeholder{
@@ -113,3 +132,7 @@
         line-height: 1.05;
         color: $textColor;
     }
+
+.success{
+    text-align: center;
+}

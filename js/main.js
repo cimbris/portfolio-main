@@ -70,6 +70,14 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
     });
 });
 
+// cookie btn
+
+const cookieButton = document.querySelector('.cookie__btn')
+
+cookieButton.addEventListener('click', function(){
+    cookieButton.closest('.cookie').style.display='none'
+})
+
 // -----------------review-slider
 // init slider
 $('.reviews-slider').slick({

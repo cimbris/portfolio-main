@@ -11,13 +11,15 @@ $(function () {
 		// находим инпуты в форме и устанавливаем им правила(все должны быть заполнены)
 	  rules: {
 		 email: { required: true, email: true },
-		 message: { required: true }
+		 message: { required: true },
+		//  check: { required: true }	
 	  },
 
 	//   сообщения при несоблюдении правил
 	  messages: {
 		 email: { required: 'Введите email', email: 'Отсутствует символ @' },
-		 message: { required: 'This field can not be empty' }
+		 message: { required: 'This field can not be empty' },
+		//  check: { required: 'This field can not be empty' },
 	  },
 
 	//   вызываем асинхронный запрос(асинхронный тк страница продолжает работать)

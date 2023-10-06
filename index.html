@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+
 <div class="background-blur"></div>
 <header class="header">
     <div class="container">
@@ -47,6 +48,15 @@
             </nav>
         </div>
 
+    </div>
+    <!-- <div class="accept">
+        <div class="accept__text">Наш сайт использует <a href="https://ru.wikipedia.org/wiki/Cookie">файлы Cookie</a></div>
+        <p class="accept__confirm">I agree to the terms of use and the processing and storage of my personal data</p>
+        <label>
+            <input class="real-checkbox" type="checkbox" name="" checked>
+            <span class="fake-checkbox"> 
+            </span>
+        </label> -->
     </div>
 </header>
 <main class="main">
@@ -113,8 +123,15 @@
                             </div>
                             <div class="skill-card__back">
                                 <button class="skill-card__krestik">
-                                    <img src="./img/icons/krestik.svg" alt="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="cross-line" d="M1 1L19 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path class="cross-line" d="M1 19L19 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                 </button>
+                                <p class="skill-card__desc">
+                                    I will create unique and attractive web pages using HTML markup language, which is the basis of modern web design.
+                                </p>
+                                
                             </div>
                         </div>
                         <div class="skill-card skill-card--css">
@@ -130,8 +147,14 @@
                                 </button>
                             </div>
                             <div class="skill-card__back">
+                                <p class="skill-card__desc">
+                                    I will attract the attention of the audience with stylish designs and effects created using CSS - a language that allows you to give your web pages a unique and fascinating look.
+                                </p>
                                 <button class="skill-card__krestik">
-                                    <img src="./img/icons/krestik.svg" alt="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="cross-line" d="M1 1L19 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path class="cross-line" d="M1 19L19 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                 </button>
                             </div>
                         </div>
@@ -149,8 +172,14 @@
                                 </button>
                             </div>
                             <div class="skill-card__back">
+                                <p class="skill-card__desc">
+                                    I will add interactivity and functionality using JavaScript, a powerful and flexible programming language.
+                                </p>
                                 <button class="skill-card__krestik">
-                                    <img src="./img/icons/krestik.svg" alt="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="cross-line" d="M1 1L19 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path class="cross-line" d="M1 19L19 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                 </button>
                             </div>
                         </div>
@@ -168,8 +197,14 @@
                                 </button>
                             </div>
                             <div class="skill-card__back">
+                                <p class="skill-card__desc">
+                                    I will create stylish and easily supported styles for websites using the CSS SCSS extension, which provides many tools to simplify the development and modification of styles.
+                                </p>
                                 <button class="skill-card__krestik">
-                                    <img src="./img/icons/krestik.svg" alt="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="cross-line" d="M1 1L19 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path class="cross-line" d="M1 19L19 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                 </button>
                             </div>
                         </div>
@@ -185,8 +220,14 @@
                                 </button>
                             </div>
                             <div class="skill-card__back">
+                                <p class="skill-card__desc">
+                                    Manage my code efficiently, collaborate with me, and control project versions using Git, a distributed version control system widely recognized in the developer community.
+                                </p>
                                 <button class="skill-card__krestik">
-                                    <img src="./img/icons/krestik.svg" alt="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="cross-line" d="M1 1L19 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path class="cross-line" d="M1 19L19 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                 </button>
                             </div>
                         </div>
@@ -340,7 +381,17 @@
                             <span class="form-item__fake-placeholder">What would you like to see in my future projects</span>
                             <textarea name="message" id="input-message" class="form-item__input form-item__input--comment" required="" placeholder="Leave your comment here"></textarea>
                         </label>
-                        <div class="form__item">
+                        <div class="form__item form__item--rules">
+                            <label>
+                                <input class="real-checkbox" type="checkbox" name="check" required>
+                                <span class="fake-checkbox"> 
+                                </span>
+                            </label>
+                            <span class="private-policy">
+                                I agree to the terms of use and the processing and storage of my <a href="http://www.kremlin.ru/acts/bank/24154" target="_blank" class="private-policy__link">personal data</a>
+                            </span>
+                        </div>
+                        <div class="form__item ">
                             <input type="submit" class="form__submit-button" value="Send">
                         </div>
                     </div>
@@ -350,7 +401,7 @@
         </div>
     </section>
 </main> 
-    <footer class="footer">
+<footer class="footer">
         <div class="container">
             <div class="footer__center">
                 <div class="footer__copyright">
@@ -421,6 +472,15 @@
             </div>
         </div>
 </footer>
+<div class="cookie">
+
+    <div class="cookie__items">
+        <p class="cookie__text">We use Cookie files :)</p>
+        <button class="cookie__btn">
+            <p class="btn-text">Accept</p>
+        </button>
+    </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
