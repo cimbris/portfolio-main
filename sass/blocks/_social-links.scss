@@ -11,11 +11,12 @@
 }
 .wrapper-social-link {
     display: flex;
+    width: 180px;
     column-gap: 16px;
     align-items: center;
     
     &:nth-child(3){
-        margin-right: 60px;
+        margin-right: 10px;
 
         @media (max-width:661px) {
             margin-right: 0;

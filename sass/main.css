@@ -5,8 +5,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button {
@@ -15,32 +14,21 @@ button {
 }
 
 html {
-  height: 100%;
-  /* sticky footer */
+  height: 100%; /* sticky footer */
   scroll-behavior: smooth;
 }
 
 body {
-  height: 100%;
-  /* sticky footer */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* sticky footer */
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  /* sticky footer */
+  height: 100%; /* sticky footer */
+  display: flex; /* sticky footer */
+  flex-direction: column; /* sticky footer */
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: wheat;
 }
 
 body > * {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  /* sticky footer */
+  flex-shrink: 0; /* sticky footer */
 }
 
 input, textarea, button {
@@ -49,8 +37,7 @@ input, textarea, button {
   margin: 0;
   border: none;
   outline: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 label {
@@ -102,8 +89,7 @@ legend {
 
 /* Sticky Footer */
 .footer {
-  margin-top: auto;
-  /* sticky footer */
+  margin-top: auto; /* sticky footer */
 }
 
 a, a:visited {
@@ -115,8 +101,7 @@ a, a:visited {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button {
@@ -126,32 +111,21 @@ button {
 }
 
 html {
-  height: 100%;
-  /* sticky footer */
+  height: 100%; /* sticky footer */
   scroll-behavior: smooth;
 }
 
 body {
-  height: 100%;
-  /* sticky footer */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* sticky footer */
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  /* sticky footer */
+  height: 100%; /* sticky footer */
+  display: flex; /* sticky footer */
+  flex-direction: column; /* sticky footer */
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #1b1a17;
 }
 
 body > * {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  /* sticky footer */
+  flex-shrink: 0; /* sticky footer */
 }
 
 body.active {
@@ -225,7 +199,6 @@ legend {
 /* Utility */
 .background-blur {
   opacity: 0;
-  -webkit-transition: opacity 500ms ease;
   transition: opacity 500ms ease;
 }
 
@@ -248,8 +221,7 @@ legend {
 
 /* Sticky Footer */
 .footer {
-  margin-top: auto;
-  /* sticky footer */
+  margin-top: auto; /* sticky footer */
 }
 
 input:-webkit-autofill,
@@ -275,7 +247,7 @@ select:-webkit-autofill:focus {
   left: 0;
   z-index: 4;
   width: 100%;
-  background-color: #1b1a17;
+  background-color: rgb(27, 26, 23);
 }
 @media (max-width: 1245px) {
   .header {
@@ -291,15 +263,9 @@ select:-webkit-autofill:focus {
     display: none;
   }
   .header .header__mobile-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -310,21 +276,14 @@ select:-webkit-autofill:focus {
 }
 
 .header__center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 530px;
-          column-gap: 530px;
+  align-items: center;
+  -moz-column-gap: 530px;
+       column-gap: 530px;
 }
 @media (max-width: 1245px) {
   .header__center {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 24px;
   }
 }
@@ -333,12 +292,11 @@ select:-webkit-autofill:focus {
   display: inline-block;
   color: wheat;
   text-decoration: none;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
   text-transform: capitalize;
-  -webkit-transition: 200ms;
   transition: 200ms;
 }
 .header__menu-link:not(:last-child) {
@@ -347,7 +305,6 @@ select:-webkit-autofill:focus {
 
 .header__menu-link:hover {
   color: #2eaf84;
-  -webkit-transition: 200ms;
   transition: 200ms;
 }
 
@@ -362,23 +319,13 @@ select:-webkit-autofill:focus {
   width: 100%;
   height: 100vh;
   background-color: rgba(27, 26, 23, 0.897);
-  -webkit-transition: top 500ms ease-in-out;
   transition: top 500ms ease-in-out;
 }
 .header__mobile-menu-list .header__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   row-gap: 64px;
 }
@@ -388,7 +335,6 @@ select:-webkit-autofill:focus {
 
 .header__mobile-menu-list.active {
   top: 0;
-  -webkit-transition: top 500ms ease-in-out;
   transition: top 500ms ease-in-out;
 }
 
@@ -409,31 +355,21 @@ select:-webkit-autofill:focus {
   }
 }
 .preview__center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 137px;
-          column-gap: 137px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -moz-column-gap: 137px;
+       column-gap: 137px;
+  align-items: center;
   position: relative;
   overflow: hidden;
 }
 .preview__center > * {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 @media (max-width: 1245px) {
   .preview__center {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 64px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 .preview__avatar {
@@ -445,8 +381,7 @@ select:-webkit-autofill:focus {
   .preview__avatar {
     width: 413px;
     height: 430px;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
   }
 }
 
@@ -456,31 +391,22 @@ select:-webkit-autofill:focus {
 }
 
 .about-me__center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 32px;
-          column-gap: 32px;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
 }
 @media (max-width: 661px) {
   .about-me__center {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     row-gap: 32px;
   }
 }
 
 .about-me__text {
   width: 904px;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 400;
   font-size: 24px;
   line-height: 1.04;
@@ -510,20 +436,15 @@ select:-webkit-autofill:focus {
 }
 
 .my-skills__card-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 16px;
-          column-gap: 16px;
+  justify-content: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   position: relative;
 }
 @media (max-width: 1245px) {
   .my-skills__card-row {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     row-gap: 16px;
   }
 }
@@ -533,7 +454,6 @@ select:-webkit-autofill:focus {
   min-height: 300px;
   border-radius: 10px;
   position: relative;
-  -webkit-transition: min-width 0.5s min-height 0.5s;
   transition: min-width 0.5s min-height 0.5s;
 }
 @media (max-width: 661px) {
@@ -551,50 +471,34 @@ select:-webkit-autofill:focus {
 .skill-card__front {
   padding-top: 61px;
   padding-bottom: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   row-gap: 10px;
   background-color: #1f1e1b;
-  -webkit-transform: perspective(600px) rotateY(0deg);
-          transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
 }
 @media (max-width: 661px) {
   .skill-card__front {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 32px;
-    -webkit-column-gap: 30px;
-            column-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
 }
 .skill-card__back {
   background-color: rgba(31, 30, 27, 0.486);
-  -webkit-transform: perspective(600px) rotateY(-180deg);
-          transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(600px) rotateY(-180deg);
   height: 100%;
 }
 .skill-card__front, .skill-card__back {
   width: 100%;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   position: absolute;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
   transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
   border-radius: 10px;
 }
 .skill-card:hover .skill-card__item--html {
@@ -643,38 +547,28 @@ select:-webkit-autofill:focus {
   }
 }
 .skill-card:hover .context-btn {
-  -webkit-transition: -webkit-box-shadow 500ms;
-  transition: -webkit-box-shadow 500ms;
   transition: box-shadow 500ms;
-  transition: box-shadow 500ms, -webkit-box-shadow 500ms;
 }
 .skill-card:hover .skill-card__item {
-  -webkit-transition: fill 500ms;
   transition: fill 500ms;
 }
 .skill-card:hover .context-btn--html {
-  -webkit-box-shadow: 0px 0px 4px 1px #FC490B, inset 0px 0px 1px 1px #FC490B;
-          box-shadow: 0px 0px 4px 1px #FC490B, inset 0px 0px 1px 1px #FC490B;
+  box-shadow: 0px 0px 4px 1px #FC490B, inset 0px 0px 1px 1px #FC490B;
 }
 .skill-card:hover .context-btn--css {
-  -webkit-box-shadow: 0px 0px 4px 1px #2196f4, inset 0px 0px 1px 1px #2196F4;
-          box-shadow: 0px 0px 4px 1px #2196f4, inset 0px 0px 1px 1px #2196F4;
+  box-shadow: 0px 0px 4px 1px #2196f4, inset 0px 0px 1px 1px #2196F4;
 }
 .skill-card:hover .context-btn--js {
-  -webkit-box-shadow: 0px 0px 4px 1px #FFDF00, inset 0px 0px 1px 1px #FFDF00;
-          box-shadow: 0px 0px 4px 1px #FFDF00, inset 0px 0px 1px 1px #FFDF00;
+  box-shadow: 0px 0px 4px 1px #FFDF00, inset 0px 0px 1px 1px #FFDF00;
 }
 .skill-card:hover .context-btn--scss {
-  -webkit-box-shadow: 0px 0px 4px 1px #CA669B, inset 0px 0px 1px 1px #CA669B;
-          box-shadow: 0px 0px 4px 1px #CA669B, inset 0px 0px 1px 1px #CA669B;
+  box-shadow: 0px 0px 4px 1px #CA669B, inset 0px 0px 1px 1px #CA669B;
 }
 .skill-card:hover .context-btn--git {
-  -webkit-box-shadow: 0px 0px 4px 1px #F25234, inset 0px 0px 1px 1px #F25234;
-          box-shadow: 0px 0px 4px 1px #F25234, inset 0px 0px 1px 1px #F25234;
+  box-shadow: 0px 0px 4px 1px #F25234, inset 0px 0px 1px 1px #F25234;
 }
 
 .skill-card__item {
-  -webkit-transition: fill 500ms;
   transition: fill 500ms;
 }
 
@@ -683,18 +577,15 @@ select:-webkit-autofill:focus {
   position: fixed;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%) !important;
-          transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
   min-width: 400px;
   min-height: 600px;
 }
 .skill-card.active .skill-card__front {
-  -webkit-transform: perspective(600px) rotateY(180deg);
-          transform: perspective(600px) rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg);
 }
 .skill-card.active .skill-card__back {
-  -webkit-transform: perspective(600px) rotateY(0deg);
-          transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
 }
 @media (max-width: 661px) {
   .skill-card.active {
@@ -715,8 +606,7 @@ select:-webkit-autofill:focus {
 
 .skill-card--html .skill-card__back {
   background-color: rgba(31, 30, 27, 0.7);
-  -webkit-box-shadow: 0px 0px 4px 1px #FC490B, inset 0px 0px 1px 1px #FC490B;
-          box-shadow: 0px 0px 4px 1px #FC490B, inset 0px 0px 1px 1px #FC490B;
+  box-shadow: 0px 0px 4px 1px #FC490B, inset 0px 0px 1px 1px #FC490B;
 }
 .skill-card--html .skill-card__back .skill-card__krestik:hover .cross-line {
   stroke: #FC490B;
@@ -724,8 +614,7 @@ select:-webkit-autofill:focus {
 
 .skill-card--css .skill-card__back {
   background-color: rgba(31, 30, 27, 0.7);
-  -webkit-box-shadow: 0px 0px 4px 1px #2196f4, inset 0px 0px 1px 1px #2196F4;
-          box-shadow: 0px 0px 4px 1px #2196f4, inset 0px 0px 1px 1px #2196F4;
+  box-shadow: 0px 0px 4px 1px #2196f4, inset 0px 0px 1px 1px #2196F4;
 }
 .skill-card--css .skill-card__back .skill-card__krestik:hover .cross-line {
   stroke: #2196f4;
@@ -733,8 +622,7 @@ select:-webkit-autofill:focus {
 
 .skill-card--js .skill-card__back {
   background-color: rgba(31, 30, 27, 0.7);
-  -webkit-box-shadow: 0px 0px 4px 1px #FFDF00, inset 0px 0px 1px 1px #FFDF00;
-          box-shadow: 0px 0px 4px 1px #FFDF00, inset 0px 0px 1px 1px #FFDF00;
+  box-shadow: 0px 0px 4px 1px #FFDF00, inset 0px 0px 1px 1px #FFDF00;
 }
 .skill-card--js .skill-card__back .skill-card__krestik:hover .cross-line {
   stroke: #FFDF00;
@@ -742,8 +630,7 @@ select:-webkit-autofill:focus {
 
 .skill-card--scss .skill-card__back {
   background-color: rgba(31, 30, 27, 0.7);
-  -webkit-box-shadow: 0px 0px 4px 1px #CA669B, inset 0px 0px 1px 1px #CA669B;
-          box-shadow: 0px 0px 4px 1px #CA669B, inset 0px 0px 1px 1px #CA669B;
+  box-shadow: 0px 0px 4px 1px #CA669B, inset 0px 0px 1px 1px #CA669B;
 }
 .skill-card--scss .skill-card__back .skill-card__krestik:hover .cross-line {
   stroke: #CA669B;
@@ -751,8 +638,7 @@ select:-webkit-autofill:focus {
 
 .skill-card--git .skill-card__back {
   background-color: rgba(31, 30, 27, 0.7);
-  -webkit-box-shadow: 0px 0px 4px 1px #F25234, inset 0px 0px 1px 1px #F25234;
-          box-shadow: 0px 0px 4px 1px #F25234, inset 0px 0px 1px 1px #F25234;
+  box-shadow: 0px 0px 4px 1px #F25234, inset 0px 0px 1px 1px #F25234;
 }
 .skill-card--git .skill-card__back .skill-card__krestik:hover .cross-line {
   stroke: #F25234;
@@ -767,7 +653,7 @@ select:-webkit-autofill:focus {
   padding-top: 200px;
   padding-bottom: 50px;
   text-align: center;
-  font-family: 'Arial';
+  font-family: "Arial";
   font-weight: 400;
   font-size: 23px;
   line-height: 37px;
@@ -792,24 +678,15 @@ select:-webkit-autofill:focus {
 }
 
 .my-works__card-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 16px;
-          column-gap: 16px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  justify-content: center;
 }
 @media (max-width: 1245px) {
   .my-works__card-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     row-gap: 16px;
   }
 }
@@ -819,30 +696,21 @@ select:-webkit-autofill:focus {
 }
 
 .footer__center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 64px;
-          column-gap: 64px;
+  justify-content: center;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
 }
 @media (max-width: 1245px) {
   .footer__center {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     row-gap: 64px;
   }
   .footer__center .context-title {
     font-weight: 400;
     text-align: center;
-    font-family: 'Impact', Impact;
+    font-family: "Impact", Impact;
     padding-bottom: 16px;
   }
 }
@@ -861,7 +729,7 @@ select:-webkit-autofill:focus {
 }
 
 .footer__text {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 400;
   font-size: 20px;
   line-height: 1.05;
@@ -897,28 +765,16 @@ select:-webkit-autofill:focus {
 }
 
 .form__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   row-gap: 35px;
 }
 
 .form__item {
   width: 800px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 7px;
 }
 @media (max-width: 1245px) {
@@ -932,24 +788,17 @@ select:-webkit-autofill:focus {
   }
 }
 .form__item--rules {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 25px;
-          column-gap: 25px;
+  flex-direction: row-reverse;
+  justify-content: center;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
 }
 .form__item--rules .private-policy {
   letter-spacing: 1px;
 }
 .form__item--rules .private-policy__link {
   color: #2eaf84;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .form__item--rules .private-policy__link:hover {
   text-decoration: underline;
@@ -963,31 +812,15 @@ select:-webkit-autofill:focus {
   padding-left: 15px;
   display: block;
   background-color: #1f1e1b;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 27px;
   line-height: 1.05;
   color: wheat;
   border: 2px solid rgba(187, 187, 187, 0);
 }
-.form-item__input::-webkit-input-placeholder {
-  font-family: 'Inconsolata';
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 1.05;
-  color: rgba(118, 126, 123, 0.527);
-  border: 2px solid rgba(187, 187, 187, 0);
-}
-.form-item__input:-ms-input-placeholder {
-  font-family: 'Inconsolata';
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 1.05;
-  color: rgba(118, 126, 123, 0.527);
-  border: 2px solid rgba(187, 187, 187, 0);
-}
-.form-item__input::-ms-input-placeholder {
-  font-family: 'Inconsolata';
+.form-item__input::-moz-placeholder {
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 27px;
   line-height: 1.05;
@@ -995,7 +828,7 @@ select:-webkit-autofill:focus {
   border: 2px solid rgba(187, 187, 187, 0);
 }
 .form-item__input::placeholder {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 27px;
   line-height: 1.05;
@@ -1013,17 +846,14 @@ select:-webkit-autofill:focus {
   /* ползунок скроллбара */
 }
 .form-item__input--comment::-webkit-scrollbar {
-  width: 4px;
-  /* ширина для вертикального скролла */
-  height: 8px;
-  /* высота для горизонтального скролла */
+  width: 4px; /* ширина для вертикального скролла */
+  height: 8px; /* высота для горизонтального скролла */
   background-color: rgba(245, 222, 179, 0.315);
 }
 .form-item__input--comment::-webkit-scrollbar-thumb {
   background-color: #000000;
   border-radius: 9em;
-  -webkit-box-shadow: inset 1px 1px 10px #f3faf7;
-          box-shadow: inset 1px 1px 10px #f3faf7;
+  box-shadow: inset 1px 1px 10px #f3faf7;
 }
 .form-item__input--comment::-webkit-scrollbar-thumb:hover {
   background-color: #09e99e;
@@ -1035,9 +865,8 @@ select:-webkit-autofill:focus {
   margin: 0 auto;
   border-radius: 50px;
   background-color: #1f1e1b;
-  -webkit-transition: 200ms;
   transition: 200ms;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 25px;
   line-height: 1.05;
@@ -1046,16 +875,13 @@ select:-webkit-autofill:focus {
 
 .form__submit-button:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-  -webkit-box-shadow: 0px 0px 4px 1px #2eaf84, inset 0px 0px 1px 1px #2eaf84;
-          box-shadow: 0px 0px 4px 1px #2eaf84, inset 0px 0px 1px 1px #2eaf84;
-  -webkit-transition: 200ms;
+  transform: scale(1.03);
+  box-shadow: 0px 0px 4px 1px #2eaf84, inset 0px 0px 1px 1px #2eaf84;
   transition: 200ms;
 }
 
 .error {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 17px;
   line-height: 1.05;
@@ -1064,7 +890,7 @@ select:-webkit-autofill:focus {
 
 .form-item__fake-placeholder {
   padding-bottom: 5px;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   text-align: center;
   font-weight: 700;
   font-size: 27px;
@@ -1084,7 +910,7 @@ select:-webkit-autofill:focus {
 
 .accept__text {
   display: inline;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -1092,7 +918,7 @@ select:-webkit-autofill:focus {
 
 .accept__confirm {
   display: inline;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -1117,7 +943,7 @@ select:-webkit-autofill:focus {
 }
 
 .fake-checkbox::before {
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   display: inline-block;
@@ -1127,8 +953,7 @@ select:-webkit-autofill:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   opacity: 0;
 }
 
@@ -1145,26 +970,18 @@ select:-webkit-autofill:focus {
 }
 
 .cookie__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  align-items: center;
 }
 
 .cookie__text {
   color: black;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   text-align: center;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -1178,8 +995,8 @@ select:-webkit-autofill:focus {
 
 .cookie__btn {
   display: inline-block;
-  color: #000000e8;
-  border: 2px solid black;
+  color: rgba(0, 0, 0, 0.9098039216);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 7px;
   padding: 5px 15px;
 }
@@ -1195,7 +1012,7 @@ select:-webkit-autofill:focus {
 }
 
 .btn-text {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 25px;
   line-height: 17px;
@@ -1226,10 +1043,8 @@ select:-webkit-autofill:focus {
   background-color: white;
   opacity: 35%;
   z-index: 1;
-  -webkit-transform: rotate(-24deg);
-          transform: rotate(-24deg);
-  -webkit-filter: blur(3.5px);
-          filter: blur(3.5px);
+  transform: rotate(-24deg);
+  filter: blur(3.5px);
 }
 @media (max-width: 661px) {
   .shadow-one {
@@ -1244,14 +1059,12 @@ select:-webkit-autofill:focus {
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 28% 72% 72% 28% / 49% 54% 46% 51%;
+  border-radius: 28% 72% 72% 28%/49% 54% 46% 51%;
   background-color: #2eaf84;
   opacity: 35%;
   z-index: 2;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
+  transform: rotate(30deg);
+  filter: blur(3px);
 }
 @media (max-width: 661px) {
   .shadow-two {
@@ -1267,8 +1080,7 @@ select:-webkit-autofill:focus {
   top: 0;
   left: 0;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 5px 2px #fff, inset 0 0 1px 1px #fff;
-          box-shadow: 0 0 5px 2px #fff, inset 0 0 1px 1px #fff;
+  box-shadow: 0 0 5px 2px #fff, inset 0 0 1px 1px #fff;
   border-radius: 28% 72% 72% 28%/49% 54% 46% 51%;
   z-index: 3;
 }
@@ -1294,7 +1106,7 @@ select:-webkit-autofill:focus {
   margin-bottom: 16px;
 }
 .autor__description {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 400;
   font-size: 20px;
   line-height: 1;
@@ -1302,7 +1114,7 @@ select:-webkit-autofill:focus {
 }
 @media (max-width: 661px) {
   .autor__description {
-    font-family: 'Inconsolata';
+    font-family: "Inconsolata";
     font-weight: 400;
     font-size: 24px;
     line-height: 1.04;
@@ -1310,7 +1122,7 @@ select:-webkit-autofill:focus {
 }
 
 .title-head {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 900;
   font-size: 64px;
   line-height: 1.05;
@@ -1318,7 +1130,7 @@ select:-webkit-autofill:focus {
 }
 @media (max-width: 661px) {
   .title-head {
-    font-family: 'Inconsolata';
+    font-family: "Inconsolata";
     font-weight: 900;
     font-size: 40px;
     line-height: 1.05;
@@ -1326,7 +1138,7 @@ select:-webkit-autofill:focus {
 }
 
 .subtitle-head {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 40px;
   line-height: 1.05;
@@ -1334,7 +1146,7 @@ select:-webkit-autofill:focus {
 }
 @media (max-width: 661px) {
   .subtitle-head {
-    font-family: 'Inconsolata';
+    font-family: "Inconsolata";
     font-weight: 700;
     font-size: 32px;
     line-height: 1.06;
@@ -1347,7 +1159,7 @@ select:-webkit-autofill:focus {
 }
 
 .context-title {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 700;
   font-size: 32px;
   line-height: 1.06;
@@ -1371,20 +1183,17 @@ select:-webkit-autofill:focus {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
-  font-family: 'Arial';
+  font-family: "Arial";
   font-weight: 400;
   font-size: 28px;
   line-height: 37px;
   color: inherit;
-  -webkit-transition: -webkit-box-shadow 500ms;
-  transition: -webkit-box-shadow 500ms;
   transition: box-shadow 500ms;
-  transition: box-shadow 500ms, -webkit-box-shadow 500ms;
   cursor: pointer;
 }
 @media (max-width: 1245px) {
   .context-btn {
-    font-family: 'Inconsolata';
+    font-family: "Inconsolata";
     font-weight: 700;
     font-size: 32px;
   }
@@ -1392,7 +1201,7 @@ select:-webkit-autofill:focus {
 @media (max-width: 661px) {
   .context-btn {
     height: 32px;
-    font-family: 'Inconsolata';
+    font-family: "Inconsolata";
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -1404,12 +1213,8 @@ select:-webkit-autofill:focus {
   overflow: hidden;
 }
 .project-card:hover .project-card__info {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
+  transform: translateY(0);
   transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
 }
 
 .project-card__img {
@@ -1424,12 +1229,8 @@ select:-webkit-autofill:focus {
   width: 320px;
   height: 320px;
   background-color: rgba(33, 32, 29, 0.98);
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
+  transform: translateY(-100%);
   transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
   z-index: 2;
   padding-bottom: 40.5px;
   padding-top: 40.5px;
@@ -1444,7 +1245,7 @@ select:-webkit-autofill:focus {
 
 .project-card__stack {
   text-align: center;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.06;
@@ -1458,7 +1259,7 @@ select:-webkit-autofill:focus {
 }
 
 .project-card__description {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.06;
@@ -1478,25 +1279,18 @@ select:-webkit-autofill:focus {
   height: 39px;
   line-height: 39px;
   border-radius: 4px;
-  -webkit-transition: color 200ms, -webkit-box-shadow 200ms;
-  transition: color 200ms, -webkit-box-shadow 200ms;
   transition: box-shadow 200ms, color 200ms;
-  transition: box-shadow 200ms, color 200ms, -webkit-box-shadow 200ms;
 }
 
 .context-link:hover {
   color: #2eaf84;
-  -webkit-box-shadow: 0px 0px 2px 1px #216850 , inset 0px 0px 1px 1px #216850;
-          box-shadow: 0px 0px 2px 1px #216850 , inset 0px 0px 1px 1px #216850;
-  -webkit-transition: color 200ms, -webkit-box-shadow 200ms;
-  transition: color 200ms, -webkit-box-shadow 200ms;
+  box-shadow: 0px 0px 2px 1px #216850, inset 0px 0px 1px 1px #216850;
   transition: box-shadow 200ms, color 200ms;
-  transition: box-shadow 200ms, color 200ms, -webkit-box-shadow 200ms;
 }
 
 .social-link {
   display: inline-block;
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 400;
   font-size: 24px;
   line-height: 1.04;
@@ -1509,37 +1303,25 @@ select:-webkit-autofill:focus {
 }
 
 .social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 48px;
-          column-gap: 48px;
+  flex-wrap: wrap;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
   row-gap: 32px;
 }
 @media (max-width: 661px) {
   .social-links {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .wrapper-social-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 180px;
-  -webkit-column-gap: 16px;
-          column-gap: 16px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
 }
 .wrapper-social-link:nth-child(3) {
   margin-right: 10px;
@@ -1558,18 +1340,10 @@ select:-webkit-autofill:focus {
 .burger {
   width: 36px;
   height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   z-index: 2;
-  -webkit-transition: 300ms;
   transition: 300ms;
 }
 
@@ -1577,27 +1351,20 @@ select:-webkit-autofill:focus {
   width: 36px;
   height: 4px;
   background-color: wheat;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .burger.active {
-  -webkit-transform: translateX(35%);
-          transform: translateX(35%);
+  transform: translateX(35%);
 }
 .burger.active .burger__line--first {
-  -webkit-transform: rotate(45deg) translateY(14px);
-          transform: rotate(45deg) translateY(14px);
+  transform: rotate(45deg) translateY(14px);
 }
 .burger.active .burger__line--second {
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 .burger.active .burger__line--third {
-  -webkit-transform: rotate(-45deg) translateY(-14px);
-          transform: rotate(-45deg) translateY(-14px);
+  transform: rotate(-45deg) translateY(-14px);
 }
 
 .reviews-slider {
@@ -1611,23 +1378,14 @@ select:-webkit-autofill:focus {
 }
 
 .slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0px);
 }
 
 .slick-dots li {
@@ -1670,13 +1428,8 @@ select:-webkit-autofill:focus {
 .slider-item {
   min-height: 300px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #1f1e1b;
   row-gap: 35px;
   padding: 16px 40px;
@@ -1692,10 +1445,8 @@ select:-webkit-autofill:focus {
 }
 
 .slider-item__review-text {
-  font-family: 'Inconsolata';
+  font-family: "Inconsolata";
   font-weight: 400;
   font-size: 24px;
   line-height: 1.2;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
